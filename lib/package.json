@@ -1,8 +1,8 @@
 {
-  "name": "@material-ui/pickers",
-  "version": "3.2.5",
+  "name": "@hydrationlabs/pickers",
+  "version": "3.3.0",
   "private": true,
-  "description": "React components, that implements material design pickers for material-ui v1",
+  "description": "Fork of Material-ui pickers v3",
   "main": "./src/index.ts",
   "module": "./src/index.ts",
   "keywords": [
@@ -20,12 +20,12 @@
   "sideEffects": false,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mui-org/material-ui-pickers/issues"
+    "url": "https://github.com/HydrationLabs/material-ui-pickers/issues"
   },
-  "homepage": "https://material-ui-pickers.dev/",
+  "homepage": "https://github.com/HydrationLabs/material-ui-pickers",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mui-org/material-ui-pickers"
+    "url": "https://github.com/HydrationLabs/material-ui-pickers"
   },
   "author": {
     "name": "Dmitriy Kovalenko",
