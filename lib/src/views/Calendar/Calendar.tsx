@@ -65,6 +65,8 @@ export interface CalendarProps
   disablePast?: boolean;
   /** Disable future dates */
   disableFuture?: boolean;
+  /** Disable all animations */
+  disableAnimations?: boolean;
 }
 
 export interface CalendarState {
@@ -99,6 +101,7 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
     disablePast: false,
     disableFuture: false,
     allowKeyboardControl: true,
+    disableAnimations: false,
   };
 
   static getDerivedStateFromProps(nextProps: CalendarProps, state: CalendarState) {
@@ -303,6 +306,7 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
       rightArrowButtonProps,
       rightArrowIcon,
       loadingIndicator,
+      disableAnimations,
     } = this.props;
     const loadingElement = loadingIndicator ? loadingIndicator : <CircularProgress />;
 
@@ -322,12 +326,14 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
           rightArrowButtonProps={rightArrowButtonProps}
           disablePrevMonth={this.shouldDisablePrevMonth()}
           disableNextMonth={this.shouldDisableNextMonth()}
+          disableAnimations={disableAnimations}
         />
 
         <SlideTransition
           slideDirection={slideDirection}
           transKey={currentMonth!.toString()}
           className={classes.transitionContainer}
+          disableAnimations={disableAnimations}
         >
           <>
             {(this.state.loadingQueue > 0 && (

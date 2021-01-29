@@ -56,4 +56,9 @@ export interface BasePickerProps {
   /** Component that will replace default toolbar renderer */
   ToolbarComponent?: React.ComponentType<ToolbarComponentProps>;
   variant?: WrapperVariant;
+  /**
+   * Disable all animations
+   * @default false
+   */
+  disableAnimations?: boolean;
 }

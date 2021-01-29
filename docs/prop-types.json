@@ -396,6 +396,21 @@
         "name": "\"dialog\" | \"inline\" | \"static\""
       }
     },
+    "disableAnimations": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Disable all animations",
+      "name": "disableAnimations",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/typings/BasePicker.tsx",
+        "name": "BasePickerProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
     "PopoverProps": {
       "defaultValue": null,
       "description": "Popover props passed to material-ui Popover (with variant=\"inline\")",
@@ -987,6 +1002,21 @@
       "required": false,
       "type": {
         "name": "FunctionComponent<ToolbarComponentProps> | ComponentClass<ToolbarComponentProps, any>"
+      }
+    },
+    "disableAnimations": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Disable all animations",
+      "name": "disableAnimations",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/typings/BasePicker.tsx",
+        "name": "BasePickerProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
       }
     },
     "PopoverProps": {
@@ -1664,6 +1694,21 @@
         "name": "\"dialog\" | \"inline\" | \"static\""
       }
     },
+    "disableAnimations": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Disable all animations",
+      "name": "disableAnimations",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/typings/BasePicker.tsx",
+        "name": "BasePickerProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
     "PopoverProps": {
       "defaultValue": null,
       "description": "Popover props passed to material-ui Popover (with variant=\"inline\")",
@@ -2063,6 +2108,21 @@
       "required": false,
       "type": {
         "name": "FunctionComponent<ToolbarComponentProps> | ComponentClass<ToolbarComponentProps, any>"
+      }
+    },
+    "disableAnimations": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Disable all animations",
+      "name": "disableAnimations",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/typings/BasePicker.tsx",
+        "name": "BasePickerProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
       }
     },
     "PopoverProps": {
@@ -2546,6 +2606,21 @@
       "required": false,
       "type": {
         "name": "\"dialog\" | \"inline\" | \"static\""
+      }
+    },
+    "disableAnimations": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Disable all animations",
+      "name": "disableAnimations",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/typings/BasePicker.tsx",
+        "name": "BasePickerProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
       }
     },
     "PopoverProps": {
@@ -3210,6 +3285,21 @@
         "name": "FunctionComponent<ToolbarComponentProps> | ComponentClass<ToolbarComponentProps, any>"
       }
     },
+    "disableAnimations": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Disable all animations",
+      "name": "disableAnimations",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/typings/BasePicker.tsx",
+        "name": "BasePickerProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
     "PopoverProps": {
       "defaultValue": null,
       "description": "Popover props passed to material-ui Popover (with variant=\"inline\")",
@@ -3736,6 +3826,21 @@
       },
       "description": "Disable future dates",
       "name": "disableFuture",
+      "parent": {
+        "fileName": "material-ui-pickers/lib/src/views/Calendar/Calendar.tsx",
+        "name": "CalendarProps"
+      },
+      "required": false,
+      "type": {
+        "name": "boolean"
+      }
+    },
+    "disableAnimations": {
+      "defaultValue": {
+        "value": "false"
+      },
+      "description": "Disable all animations",
+      "name": "disableAnimations",
       "parent": {
         "fileName": "material-ui-pickers/lib/src/views/Calendar/Calendar.tsx",
         "name": "CalendarProps"

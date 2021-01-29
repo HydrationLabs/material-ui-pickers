@@ -9,6 +9,7 @@ interface SlideTransitionProps {
   className?: string;
   slideDirection: SlideDirection;
   children: React.ReactChild;
+  disableAnimations?: boolean;
 }
 
 const animationDuration = 350;
@@ -65,6 +66,7 @@ const SlideTransition: React.SFC<SlideTransitionProps> = ({
   transKey,
   slideDirection,
   className = null,
+  disableAnimations = false,
 }) => {
   const classes = useStyles();
   const transitionClasses = {
@@ -75,6 +77,10 @@ const SlideTransition: React.SFC<SlideTransitionProps> = ({
     // @ts-ignore
     exitActive: classes['slideExitActiveLeft-' + slideDirection],
   };
+
+  if (disableAnimations) {
+    return <div className={clsx(classes.transitionContainer, className)}>{children}</div>;
+  }
 
   return (
     <TransitionGroup

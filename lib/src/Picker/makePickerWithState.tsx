@@ -78,6 +78,7 @@ export function makePickerWithState<T extends any>({
       value,
       variant,
       views,
+      disableAnimations,
       ...other
     } = props;
 
@@ -123,6 +124,7 @@ export function makePickerWithState<T extends any>({
           timeIcon={timeIcon}
           ToolbarComponent={ToolbarComponent}
           views={views}
+          disableAnimations={disableAnimations}
         />
       </Wrapper>
     );

@@ -20,6 +20,7 @@ export interface CalendarHeaderProps {
   disableNextMonth?: boolean;
   slideDirection: SlideDirection;
   onMonthChange: (date: MaterialUiPickersDate, direction: SlideDirection) => void | Promise<void>;
+  disableAnimations?: boolean;
 }
 
 export const useStyles = makeStyles(
@@ -66,6 +67,7 @@ export const CalendarHeader: React.SFC<CalendarHeaderProps> = ({
   disablePrevMonth,
   disableNextMonth,
   slideDirection,
+  disableAnimations,
 }) => {
   const utils = useUtils();
   const classes = useStyles();
@@ -91,6 +93,7 @@ export const CalendarHeader: React.SFC<CalendarHeaderProps> = ({
           slideDirection={slideDirection}
           transKey={currentMonth.toString()}
           className={classes.transitionContainer}
+          disableAnimations={disableAnimations}
         >
           <Typography align="center" variant="body1">
             {utils.getCalendarHeaderText(currentMonth)}
